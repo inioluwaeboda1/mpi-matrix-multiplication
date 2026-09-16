@@ -1,0 +1,12 @@
+.DS_Store
+*.o
+*.out
+*.exe
+/matrix_serial
+/matrix_transposed
+/matrix_mpi
+build/
+bin/
+__pycache__/
+.venv/
+slurm-*.out

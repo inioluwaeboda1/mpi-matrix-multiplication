@@ -1,0 +1,62 @@
+benchmark_id,environment,implementation,configuration,compiler,compiler_flags,matrix_size,node_count,mpi_ranks_per_node,total_mpi_ranks,transpose,runtime,runtime_unit,source_sheet,source_row,notes
+local-baseline-gcc-n100,local_pc,sequential_baseline,baseline,gcc,,100,,,,false,3.456,milliseconds,myPC,2,
+local-baseline-gcc-n1000,local_pc,sequential_baseline,baseline,gcc,,1000,,,,false,13586.626,milliseconds,myPC,2,
+local-baseline-gcc-n4000,local_pc,sequential_baseline,baseline,gcc,,4000,,,,false,689647.237,milliseconds,myPC,2,
+local-baseline-gcc-n6000,local_pc,sequential_baseline,baseline,gcc,,6000,,,,false,5104839.284,milliseconds,myPC,2,
+local-baseline-gcc-o2-n100,local_pc,sequential_baseline,optimized,gcc,-O2,100,,,,false,1.033,milliseconds,myPC,3,
+local-baseline-gcc-o2-n1000,local_pc,sequential_baseline,optimized,gcc,-O2,1000,,,,false,3835.872,milliseconds,myPC,3,
+local-baseline-gcc-o2-n4000,local_pc,sequential_baseline,optimized,gcc,-O2,4000,,,,false,389194.142,milliseconds,myPC,3,
+local-baseline-gcc-o2-n6000,local_pc,sequential_baseline,optimized,gcc,-O2,6000,,,,false,2785737.61,milliseconds,myPC,3,
+local-transposed-gcc-o2-n100,local_pc,sequential_transposed,cache_friendly,gcc,-O2,100,,,,true,0.912,milliseconds,myPC,4,
+local-transposed-gcc-o2-n1000,local_pc,sequential_transposed,cache_friendly,gcc,-O2,1000,,,,true,1473.778,milliseconds,myPC,4,
+local-transposed-gcc-o2-n4000,local_pc,sequential_transposed,cache_friendly,gcc,-O2,4000,,,,true,89121.041,milliseconds,myPC,4,
+local-transposed-gcc-o2-n6000,local_pc,sequential_transposed,cache_friendly,gcc,-O2,6000,,,,true,281873.774,milliseconds,myPC,4,
+titan-baseline-gcc-n100,titan_sandy_bridge,sequential_baseline,baseline,gcc,,100,,,,false,9.372,milliseconds,Titan,2,
+titan-baseline-gcc-n1000,titan_sandy_bridge,sequential_baseline,baseline,gcc,,1000,,,,false,8566.032,milliseconds,Titan,2,
+titan-baseline-gcc-n4000,titan_sandy_bridge,sequential_baseline,baseline,gcc,,4000,,,,false,1064704.947,milliseconds,Titan,2,
+titan-baseline-gcc-n6000,titan_sandy_bridge,sequential_baseline,baseline,gcc,,6000,,,,false,3603621.47,milliseconds,Titan,2,
+titan-baseline-gcc-o2-n100,titan_sandy_bridge,sequential_baseline,optimized,gcc,-O2,100,,,,false,1.286,milliseconds,Titan,3,
+titan-baseline-gcc-o2-n1000,titan_sandy_bridge,sequential_baseline,optimized,gcc,-O2,1000,,,,false,7846.998,milliseconds,Titan,3,
+titan-baseline-gcc-o2-n4000,titan_sandy_bridge,sequential_baseline,optimized,gcc,-O2,4000,,,,false,379550.825,milliseconds,Titan,3,
+titan-baseline-gcc-o2-n6000,titan_sandy_bridge,sequential_baseline,optimized,gcc,-O2,6000,,,,false,1073877.177,milliseconds,Titan,3,
+titan-baseline-icx-n100,titan_sandy_bridge,sequential_baseline,baseline,icx,,100,,,,false,1.47,milliseconds,Titan,4,
+titan-baseline-icx-n1000,titan_sandy_bridge,sequential_baseline,baseline,icx,,1000,,,,false,8357.926,milliseconds,Titan,4,
+titan-baseline-icx-n4000,titan_sandy_bridge,sequential_baseline,baseline,icx,,4000,,,,false,367071.529,milliseconds,Titan,4,
+titan-baseline-icx-n6000,titan_sandy_bridge,sequential_baseline,baseline,icx,,6000,,,,false,971809.688,milliseconds,Titan,4,
+titan-baseline-icx-o2-n100,titan_sandy_bridge,sequential_baseline,optimized,icx,-O2,100,,,,false,1.437,milliseconds,Titan,5,
+titan-baseline-icx-o2-n1000,titan_sandy_bridge,sequential_baseline,optimized,icx,-O2,1000,,,,false,8315.133,milliseconds,Titan,5,
+titan-baseline-icx-o2-n4000,titan_sandy_bridge,sequential_baseline,optimized,icx,-O2,4000,,,,false,353118.559,milliseconds,Titan,5,
+titan-baseline-icx-o2-n6000,titan_sandy_bridge,sequential_baseline,optimized,icx,-O2,6000,,,,false,968494.077,milliseconds,Titan,5,
+titan-transposed-icx-o2-n100,titan_sandy_bridge,sequential_transposed,cache_friendly,icx,-O2,100,,,,true,1.494,milliseconds,Titan,6,
+titan-transposed-icx-o2-n1000,titan_sandy_bridge,sequential_transposed,cache_friendly,icx,-O2,1000,,,,true,635.472,milliseconds,Titan,6,
+titan-transposed-icx-o2-n4000,titan_sandy_bridge,sequential_transposed,cache_friendly,icx,-O2,4000,,,,true,49983.457,milliseconds,Titan,6,
+titan-transposed-icx-o2-n6000,titan_sandy_bridge,sequential_transposed,cache_friendly,icx,-O2,6000,,,,true,168600.517,milliseconds,Titan,6,
+titan-mpi1-n10000-nodes8-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,8,1,8,false,6.76408,minutes,Titan,9,"Workbook field normalized as MPI ranks per node."
+titan-mpi1-n10000-nodes8-rpn16-notranspose,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,8,16,128,false,0.53861,minutes,Titan,10,"Workbook field normalized as MPI ranks per node."
+titan-mpi1-n10000-nodes1-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,1,1,1,true,12.33209,minutes,Titan,12,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes2-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,2,1,2,true,6.15231,minutes,Titan,13,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes4-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,4,1,4,true,3.1096,minutes,Titan,14,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes8-rpn1-transposed,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,8,1,8,true,1.56937,minutes,Titan,15,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes16-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,16,1,16,true,0.83783,minutes,Titan,16,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes20-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,20,1,20,true,0.66259,minutes,Titan,17,"Workbook field normalized as one MPI rank per node."
+titan-mpi1-n10000-nodes1-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,1,16,16,true,1.71048,minutes,Titan,19,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi1-n10000-nodes2-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,2,16,32,true,0.88194,minutes,Titan,20,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi1-n10000-nodes4-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,4,16,64,true,0.49823,minutes,Titan,21,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi1-n10000-nodes8-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,8,16,128,true,0.30667,minutes,Titan,22,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi1-n10000-nodes16-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,16,16,256,true,0.24478,minutes,Titan,23,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi1-n10000-nodes20-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v1,mpiicx,-O2,10000,20,16,320,true,0.23154,minutes,Titan,24,"Workbook field normalized as total MPI ranks; ranks per node inferred from node and rank counts."
+titan-mpi2-n10000-nodes1-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,1,1,1,true,12.33088,minutes,Titan,26,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes2-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,2,1,2,true,6.18161,minutes,Titan,27,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes4-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,4,1,4,true,3.10954,minutes,Titan,28,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes8-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,8,1,8,true,1.57548,minutes,Titan,29,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes16-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,16,1,16,true,0.81669,minutes,Titan,30,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes20-rpn1,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,20,1,20,true,0.66549,minutes,Titan,31,"Compiler flags established by accompanying project documentation; workbook field normalized as one MPI rank per node."
+titan-mpi2-n10000-nodes1-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,1,16,16,true,1.71017,minutes,Titan,33,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n10000-nodes2-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,2,16,32,true,0.88159,minutes,Titan,34,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n10000-nodes4-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,4,16,64,true,0.503,minutes,Titan,35,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n10000-nodes8-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,8,16,128,true,0.30431,minutes,Titan,36,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n10000-nodes16-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,16,16,256,true,0.24676,minutes,Titan,37,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n10000-nodes20-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,10000,20,16,320,true,0.22998,minutes,Titan,38,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n20000-nodes32-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,20000,32,16,512,true,0.86329,minutes,Titan,40,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n20000-nodes48-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,20000,48,16,768,true,0.81256,minutes,Titan,41,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."
+titan-mpi2-n20000-nodes64-rpn16,titan_sandy_bridge,mpi_distributed,mpi_v2,mpiicx,-mavx -mtune=sandybridge -Ofast,20000,64,16,1024,true,0.82987,minutes,Titan,42,"Compiler flags established by accompanying project documentation; workbook field normalized as total MPI ranks."

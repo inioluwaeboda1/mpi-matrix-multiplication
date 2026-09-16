@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<rect width="1400" height="850" fill="#f8fafc"/>
+<text x="150" y="62" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">MPI scaling at N = 10,000</text>
+<text x="150" y="101" font-family="Arial, sans-serif" font-size="19" fill="#5d6879">Sixteen MPI ranks per node; transposed multiplication enabled</text>
+<line x1="150" y1="705.00" x2="1340" y2="705.00" stroke="#d8dee9"/>
+<text x="132" y="710.00" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">0</text>
+<line x1="150" y1="562.50" x2="1340" y2="562.50" stroke="#d8dee9"/>
+<text x="132" y="567.50" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">0.5</text>
+<line x1="150" y1="420.00" x2="1340" y2="420.00" stroke="#d8dee9"/>
+<text x="132" y="425.00" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">1</text>
+<line x1="150" y1="277.50" x2="1340" y2="277.50" stroke="#d8dee9"/>
+<text x="132" y="282.50" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">1.5</text>
+<line x1="150" y1="135.00" x2="1340" y2="135.00" stroke="#d8dee9"/>
+<text x="132" y="140.00" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">2</text>
+<line x1="150.00" y1="705" x2="150.00" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="150.00" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">1</text>
+<line x1="212.63" y1="705" x2="212.63" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="212.63" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">2</text>
+<line x1="337.89" y1="705" x2="337.89" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="337.89" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">4</text>
+<line x1="588.42" y1="705" x2="588.42" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="588.42" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">8</text>
+<line x1="1089.47" y1="705" x2="1089.47" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="1089.47" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">16</text>
+<line x1="1340.00" y1="705" x2="1340.00" y2="713" stroke="#172033" stroke-width="2"/>
+<text x="1340.00" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5d6879">20</text>
+<line x1="150" y1="135" x2="150" y2="705" stroke="#172033" stroke-width="2"/>
+<line x1="150" y1="705" x2="1340" y2="705" stroke="#172033" stroke-width="2"/>
+<text x="745.0" y="762" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#172033">Node count</text>
+<text x="42" y="420.0" text-anchor="middle" transform="rotate(-90 42 420.0)" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#172033">Runtime (minutes)</text>
+<polyline points="150.00,217.51 212.63,453.65 337.89,563.00 588.42,617.60 1089.47,635.24 1340.00,639.01" fill="none" stroke="#1261a0" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="150.00" cy="217.51" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<circle cx="212.63" cy="453.65" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<circle cx="337.89" cy="563.00" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<circle cx="588.42" cy="617.60" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<circle cx="1089.47" cy="635.24" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<circle cx="1340.00" cy="639.01" r="7" fill="#f8fafc" stroke="#1261a0" stroke-width="4"/>
+<line x1="150" y1="780" x2="184" y2="780" stroke="#1261a0" stroke-width="5"/>
+<circle cx="167" cy="780" r="6" fill="#f8fafc" stroke="#1261a0" stroke-width="3"/>
+<text x="194" y="786" font-family="Arial, sans-serif" font-size="17" fill="#172033">mpiicx -O2</text>
+<polyline points="150.00,217.60 212.63,453.75 337.89,561.64 588.42,618.27 1089.47,634.67 1340.00,639.46" fill="none" stroke="#e07a1f" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="150.00" cy="217.60" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<circle cx="212.63" cy="453.75" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<circle cx="337.89" cy="561.64" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<circle cx="588.42" cy="618.27" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<circle cx="1089.47" cy="634.67" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<circle cx="1340.00" cy="639.46" r="7" fill="#f8fafc" stroke="#e07a1f" stroke-width="4"/>
+<line x1="310" y1="780" x2="344" y2="780" stroke="#e07a1f" stroke-width="5"/>
+<circle cx="327" cy="780" r="6" fill="#f8fafc" stroke="#e07a1f" stroke-width="3"/>
+<text x="354" y="786" font-family="Arial, sans-serif" font-size="17" fill="#172033">mpiicx AVX/Ofast</text>
+</svg>
