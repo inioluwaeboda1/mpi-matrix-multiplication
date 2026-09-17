@@ -23,6 +23,10 @@ The portfolio repository was derived from four preserved artifacts:
 
 The archived MPI implementation was compared with earlier Lab 1 versions and later Lab 2 MPI/OpenMP descendants to identify conservative repairs. The final packaged MPI file is the version most clearly associated with the submission bundle, but it contains a broken `MPI_Reduce` call and cannot be the exact runnable source that produced the preserved results.
 
+## Course scaffold influence
+
+The original MPI implementation was developed within the structure of instructor/course-provided breadcrumb scaffolding. The original breadcrumb/scaffold file itself is not included in this repository. The scaffold influenced portions of the program structure and MPI workflow. The completed computational logic, data-distribution implementation, correctness work, and experiments were collaborative student work; the later portfolio hardening is subsequent portfolio engineering. This disclosure acknowledges provenance and does not claim ownership of instructor-provided material.
+
 ## Original coursework versus portfolio revisions
 
 ### Original collaborative coursework
@@ -69,7 +73,7 @@ The workbook labels the second MPI configuration as `mpiicx - mavx`. The full co
 
 This repository intentionally excludes:
 
-- Instructor handouts, starter code, and workbook templates.
+- The original instructor handouts, breadcrumb/scaffold file, and workbook templates. Their exclusion does not imply that the scaffold had no influence on the archived student MPI implementation.
 - Textbooks, course PDFs, the syllabus, and course calendars.
 - Submission ZIP archives and duplicate source copies.
 - Titan HPC cluster account details, cluster paths, and MobaXterm material.
